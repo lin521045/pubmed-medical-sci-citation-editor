@@ -24,6 +24,8 @@ Read [references/pubmed-query-and-audit.md](references/pubmed-query-and-audit.md
 - If using 2 or 3 citations together, make them complementary rather than redundant.
 - Distribute citations naturally across the prose. Avoid making any single sentence, paragraph, or short stretch of text look citation-heavy unless the content is explicitly a literature synthesis.
 - Keep at least 80% of all citation placements in the Introduction and Discussion.
+- Keep the number of citation insertions in the Introduction between 12 and 18 inclusive.
+- Ensure the Discussion contains at least as many citation insertions as the Introduction.
 - Keep Results free of citations unless the sentence explicitly compares a numeric result with prior literature.
 - Cite Methods only for classic methods, official kits, or standard protocols.
 - Ensure at least 70% of references are cited exactly once across the manuscript.
@@ -62,6 +64,7 @@ Output this phase explicitly as `Phase 1: Text Analysis & Query Formulation`.
   `Claim in Text | Target Citation(s) Title, Year, PMID | Section | Evidence Level/Dimension`
 - Record why grouped citations are complementary, such as mechanism plus clinical data, or biomarker assay plus prospective validation.
 - Track recency distribution and single-use distribution while mapping so the final audit will pass without major rework.
+- Track Introduction and Discussion citation counts during mapping so the Introduction stays within 12-18 insertions and the Discussion count remains greater than or equal to the Introduction count.
 
 Output this phase explicitly as `Phase 2: Mandatory Tool Execution & Mapping`.
 
@@ -70,6 +73,8 @@ Output this phase explicitly as `Phase 2: Mandatory Tool Execution & Mapping`.
 - Revise the manuscript text by inserting superscript citations after punctuation.
 - Do not alter the scientific meaning unless the source search proves the original sentence is overstated; in that case, tighten the wording before citing it.
 - When several adjacent sentences need support, distribute references across the paragraph instead of stacking them into one dense sentence whenever that remains scientifically precise.
+- If the Introduction is trending above 18 citation insertions, consolidate only where one source truly supports adjacent claims; if it is below 12, add support to the highest-value background or rationale sentences first.
+- In the Discussion, maintain a citation count that is at least equal to the Introduction while keeping the distribution visually even and argument-driven.
 - Keep Results uncited unless a direct published comparison is explicitly being made.
 - Number references in order of first appearance.
 - Produce a Nature Communications-style reference list with:
@@ -97,6 +102,10 @@ Output this phase explicitly as `Phase 3: Strict Insertion & Formatting`.
   `7. References cited exactly ONCE`
 - Report:
   `8. Maximum citations at a single spot`
+- Report:
+  `9. Citation insertions in Introduction`
+- Report:
+  `10. Citation insertions in Discussion`
 - If any metric fails, state `AUDIT FAILED, RE-RUNNING TOOL & REVISING...`, revise the mapping, and only then present the corrected final output.
 
 Output this phase explicitly as `Phase 4: Editor's Compliance Audit`.
@@ -122,6 +131,8 @@ Within Phase 3, include both:
 - Watch for review articles being used to support primary-outcome claims when a higher-quality primary study is available.
 - Keep the citation set balanced across distinct claims rather than reusing the same papers everywhere.
 - Prefer a visually even citation rhythm across Introduction and Discussion so the manuscript reads like polished journal prose rather than an over-annotated draft.
+- Treat the Introduction citation budget as scarce editorial space: 12-18 well-placed insertions, not more.
+- Treat the Discussion as equally or more evidence-dense than the Introduction, especially for interpretation, comparison with prior work, and clinical or mechanistic implications.
 - When a claim cannot be supported within the date and quality limits, revise or narrow the claim instead of forcing a poor citation.
 - If the manuscript mixes human, animal, and in vitro evidence, make that distinction explicit in the mapping and citation grouping.
 - When the user requests only a partial section revision, still preserve the global audit logic over the reference set used in that response.
