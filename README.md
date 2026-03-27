@@ -16,6 +16,7 @@ The skill is designed for high-standard medical academic editing scenarios such 
 - No hallucinated citations and no citation dumping.
 - Evidence hierarchy is enforced.
 - Citation recency, section distribution, and single-use rate are audited mathematically.
+- Introduction citation insertions are constrained to 12-18, and Discussion must contain at least as many insertions as Introduction.
 - In-text citations use superscript numbering after punctuation.
 - Reference lists follow `Nature Communications` style.
 
@@ -23,6 +24,7 @@ The skill is designed for high-standard medical academic editing scenarios such 
 - 严禁虚构引文，严禁无关文献堆砌。
 - 严格遵循证据等级优先原则。
 - 对文献时效性、章节分布和单次使用率进行数学审计。
+- `Introduction` 的引文插入数限制在 12-18 之间，且 `Discussion` 的引文插入数不得少于 `Introduction`。
 - 文内引文采用标点后上标编号。
 - 参考文献列表遵循 `Nature Communications` 格式。
 
