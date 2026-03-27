@@ -1,0 +1,4 @@
+interface:
+  display_name: "PubMed Medical SCI Editor"
+  short_description: "PubMed-verified medical SCI citation insertion"
+  default_prompt: "Use $pubmed-medical-sci-citation-editor to add precise PubMed-verified citations to my medical SCI manuscript draft."
