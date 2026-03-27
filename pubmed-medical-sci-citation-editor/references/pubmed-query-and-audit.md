@@ -98,6 +98,8 @@ Let:
 - `Y5` = references from 2021-2026
 - `Y10` = references from 2016-2026
 - `I_D` = number of citation placements in Introduction plus Discussion
+- `I` = number of citation placements in Introduction
+- `D` = number of citation placements in Discussion
 - `C_all` = total citation placements across all sections
 - `S1` = references cited exactly once
 - `M` = maximum citations used at one insertion point
@@ -108,6 +110,8 @@ Compute:
 - Five-year rate = `Y5 / R`
 - Ten-year rate = `Y10 / R`
 - Intro/Discussion placement rate = `I_D / C_all`
+- Introduction insertion count = `I`
+- Discussion insertion count = `D`
 - Single-use rate = `S1 / R`
 
 Target thresholds:
@@ -116,11 +120,16 @@ Target thresholds:
 - `Y5 / R >= 0.70`
 - `Y10 / R >= 0.90`, with all remaining older references still after 2010
 - `I_D / C_all >= 0.80`
+- `12 <= I <= 18`
+- `D >= I`
 - `S1 / R >= 0.70`
 - `M <= 3`
 
 ## Failure Handling
 
 - If a metric fails, revise the citation map first rather than editing the audit text.
+- If the Introduction count exceeds 18, redistribute support by removing low-value background citations or consolidating only where a single citation truly supports adjacent claims.
+- If the Introduction count is below 12, add citations to the most important unmet background, rationale, or knowledge-gap statements.
+- If the Discussion count is lower than the Introduction count, add support to interpretation, comparison-with-literature, mechanism, limitation, or implication sentences before touching other sections.
 - If the newest high-level evidence is not a direct fit, prefer a recent high-quality primary study over an older broad review.
 - If no eligible paper exists within the date rules, narrow or rewrite the claim and then search again.
